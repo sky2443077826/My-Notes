@@ -116,3 +116,43 @@ $ git add [filename]
 //提交到工作区
 $ git commit -m "commit message" [filename]
 ```
+#### 4.3.4 查看历史状态
+```
+//完整查看
+$ git log
+//简洁显示
+$ git log --pretty=oneline
+//单行显示
+$ git log --oneline
+//字典显示
+$ git reflog
+```
+
+#### 4.3.5 版本的前进后退
+* 基于索引值
+  ```
+  $ git reset --hard [索引值]
+  ```
+* "^"(后退一格)
+  ```
+  //后退一格
+  $ git reset --hard HEAD^
+  //后退两格
+  $ git reset --hard HEAD^^
+  ```
+* "~"(后退n格)
+  ```
+  //后退n格
+  $ git reset --hard HEAD~n
+  ```
+
+#### 4.3.6 reset命令的参数
+* --soft
+  * 只修改本地库的HEAD指针
+* --mixed
+  * 修改本地库HEAD指针
+  * 重置暂存区
+* --hard
+  * 修改本地库HEAD指针
+  * 重置暂存区
+  * 重置工作区
