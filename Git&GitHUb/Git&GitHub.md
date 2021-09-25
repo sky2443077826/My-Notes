@@ -1,5 +1,7 @@
 # Git&GitHub学习笔记
-*本笔记由个观看课程[Git与GitHub基础全套完整版教程](https://www.bilibili.com/video/BV1pW411A7a5)所总结*
+
+*本笔记由个人观看课程[Git与GitHub基础全套完整版教程](https://www.bilibili.com/video/BV1pW411A7a5)所总结*
+
 - [Git&GitHub学习笔记](#gitgithub学习笔记)
   - [一、版本控制](#一版本控制)
     - [1.1 版本控制工具的功能](#11-版本控制工具的功能)
