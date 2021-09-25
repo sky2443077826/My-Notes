@@ -1,2 +1,1 @@
-- [Git&GitHub学习笔记](Git&GitHub\Git&GitHub.md#gitgithub学习笔记)
-  - [一、版本控制](Git&GitHub\Git&GitHub.md#一版本控制)
+* [Git&GitHub学习笔记](https://github.com/sky2443077826/My-Notes/blob/8c348b74ac7bbad9989d054e4e672c509cf48004/Git&GitHUb/Git&GitHub.md)
