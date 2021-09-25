@@ -1,4 +1,6 @@
 # Git&GitHub学习笔记
+
+---
 ## 一、版本控制
 个人：为了在一次项目中，从任何发阶段修改代码。
 团队：为了在一次项目中，多人向服务器提交代码、而不产生覆盖操作。
@@ -10,9 +12,8 @@
 * 权限控制：团队中人员、团队外贡献者（GIT独有）
 * 历史记录：查看日志、恢复历史状态
 * 分支管理：多生产线同时推进
-  
+---
 ## 二、GIT
-
 ### 2.1 Git本地结构
 ![](mmexport1632271907222.png)
 *简单示意图*
@@ -49,6 +50,7 @@
 * 组外交互
   先**fork**出另一个远程库，经过同样的流程后，由组外人员提出**pull request**，经过审核方可将两个远程库**merge**
 
+---
 ## 三、Git命令行操作
 *命令行语句在Git Bash里执行（Git命令与Linux命令兼容）*
 
@@ -210,7 +212,7 @@ $ git reflog
     $ git commit -m "日志信息"
     ```
 
-
+---
 ## 四、Git原理
 ### 4.1 哈希算法
 哈希算法有以下几个特点：
@@ -233,7 +235,36 @@ $ git reflog
 * 若要切换到分支testing，则HEAD指针指向testing，即可切换
 ![](TXU$%2[V%%QIE0@Q6[_K3RB.png)
 
+---
 ## 五、GitHub
 ### 5.1 创建远程仓库
 * 右上角“+”，选择new repository
 * 填写Repository Name(仓库名称)
+* 选择Public/Private
+### 5.2 一些基本操作
+  * 推送
+    ```
+    //第一次推送前，先执行命令，把远程仓库地址保存到origin
+    git remote add origin [远程仓库地址]
+    //查看远程库
+    git remote -v
+    //推送至远程库
+    git push [分支]
+    ```
+  * 克隆
+    ```
+    git clone [远程库地址]
+    ```
+  * 远程库邀请人员加入
+    * 项目界面-Settings-Collaborators-Add collaborator
+  * 拉取
+    * **pull = fecth + merge**
+    * **fecth**-抓取-只把远程库下载至本地
+      ```
+      git fetch [远程库] [远程分支]
+      ```
+    * **merge**-合并-把下载的库合并到本地
+      ```
+      git merge [远程库/远程分支]
+      ```
+    * **pull**-拉取-下载并合并
